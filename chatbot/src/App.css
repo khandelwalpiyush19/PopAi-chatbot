@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 300px;
+  padding-top: 30px;
+}
+
+.messages .userMsg{
+  clear: both;
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 30px;
+  max-width: 60vw;
+  align-self: flex-end;
+  min-width: 20vw;
+}
+
+.messages .responseMsg{
+  clear: both;
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 30px;
+  max-width: 60vw;
+  align-self: flex-start;
+  min-width: 20vw;
+  margin-top: 15px;
+} 
+
+.messages {
+  max-height: 60vh; /* Adjust this value as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Optional: Add padding to make the content look nicer */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.bottom {
+  margin-top: auto; /* Pushes the bottom section to the bottom of the screen */
+}
+
+.messages {
+  max-height: 60vh; /* Adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px 150px; /* Add 150px padding on the left and right */
+}
+
+.userMsg {
+  text-align: left;
+  margin: 10px 0; /* Add spacing between messages */
+}
+
+.responseMsg {
+  text-align: right;
+  margin: 10px 0; /* Add spacing between messages */
+  /* Optionally add margin-left to ensure there's space from the left edge of the container */
+}
